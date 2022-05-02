@@ -76,7 +76,7 @@ export class ApiClient extends EventEmitter {
         }).then(async function (data) {
             try {
                 return await JSON.parse(data)
-            } catch (error) {
+            } catch (error: any) {
                 if (error) {
                     return { code: 400, message: error.message }
                 }
