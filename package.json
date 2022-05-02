@@ -1,6 +1,6 @@
 {
   "name": "scarlex",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Official Scarlex npm package , that offers currently our api wrapper. More to be added.",
   "license": "MIT",
   "homepage": "https://github.com/ScarlexDev/ScarlexNPM#readme",
@@ -22,7 +22,7 @@
   "main": "dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "require": "./dist/index.js"
     }
   },
   "browser": "dist/index.js",

@@ -53,7 +53,6 @@ export class ApiClient extends EventEmitter {
             throw new Error("No password provided");
         }
 
-
     }
     /**
      * It takes a string, makes a request to the Scarlex API, and returns a promise that resolves to an
