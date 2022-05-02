@@ -1,0 +1,44 @@
+{
+  "name": "scarlex",
+  "version": "1.0.2",
+  "description": "Official Scarlex npm package , that offers currently our api wrapper. More to be added.",
+  "license": "MIT",
+  "homepage": "https://github.com/ScarlexDev/ScarlexNPM#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScarlexDev/ScarlexNPM.git"
+  },
+  "keywords": [
+    "scarlex",
+    "discord",
+    "document",
+    "show",
+    "customisable",
+    "easy-to-use",
+    "api"
+  ],
+  "author": "avixity",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "browser": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc build",
+    "size": "cat dist/index.js | esbuild --minify | gzip | wc -c",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.30"
+  }
+}
