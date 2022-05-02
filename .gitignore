@@ -1,8 +1,7 @@
 node_modules/
 package-lock.json
 test.js
-build/
-
+src/
 **/*.js
 **/*.mjs
 **/*.js.map

@@ -87,6 +87,14 @@ export class ApiClient extends EventEmitter {
 
     }
 
+    /**
+     * This function returns a promise that resolves to an apiResponse object.
+     * @returns An object with a property called "data" that is a string.
+     */
+    public async getAllEndpoints(): Promise<apiResponse> {
+        return await this.makeRequest("json")
+    }
+
 }
 
 
